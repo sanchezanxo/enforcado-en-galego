@@ -1,0 +1,8 @@
+{
+  "vidas_iniciais": 10,
+  "palabras_por_partida": 10,
+  "puntos_palabra": 100,
+  "bonus_letra_correcta": 10,
+  "penalizacion_letra_incorrecta": -5,
+  "bonus_palabra_sen_erros": 50
+}
