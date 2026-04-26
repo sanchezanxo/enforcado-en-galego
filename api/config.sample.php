@@ -6,7 +6,7 @@ return [
     'env' => 'development',
 
     'db' => [
-        // En local: 'sqlite'. En Lucushost: 'mysql' ou 'sqlite' (a elección).
+        // 'sqlite' (recomendado) ou 'mysql' segundo o servidor.
         'driver'      => 'sqlite',
         'sqlite_path' => __DIR__ . '/../db/enforcado.sqlite',
 

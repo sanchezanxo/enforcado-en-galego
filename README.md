@@ -2,8 +2,6 @@
 
 Web app para xogar ao **Enforcado en galego**: adiviña 10 palabras letra a letra antes de quedar sen vidas. En produción en https://enforcado.aschavesdalingua.gal.
 
-> Forma parte do monorepo **xogos-as-chaves-da-lingua**. As instrucións xerais están no `CLAUDE.md` da raíz do monorepo.
-
 ## Stack
 
 - HTML5 + CSS + JS vanilla (ES6 módulos). Sen build-step.
@@ -35,13 +33,13 @@ rsync -avz \
   --exclude='db/*.sqlite*' \
   --exclude='router.php' \
   --exclude='*.log' --exclude='.DS_Store' \
-  ./enforcado/ aschavesdalingua:enforcado.aschavesdalingua.gal/
+  ./enforcado/ usuario@servidor:enforcado.aschavesdalingua.gal/
 ```
 
 No servidor, primeira vez:
 
 ```bash
-ssh aschavesdalingua
+ssh usuario@servidor
 cd enforcado.aschavesdalingua.gal
 cp api/config.sample.php api/config.php
 # editar api/config.php: env=production, salts aleatorios, origen_permitido https://enforcado.aschavesdalingua.gal
